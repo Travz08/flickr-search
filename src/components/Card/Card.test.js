@@ -1,8 +1,8 @@
 import { render, screen } from "@testing-library/react";
-import App from "./App";
+import Card from "./Card";
 
-test("renders card components", () => {
-  render(<App />);
+test("renders hello world", () => {
+  render(<Card />);
   const linkElement = screen.getByText(/Hello World/i);
   expect(linkElement).toBeInTheDocument();
 });
